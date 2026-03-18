@@ -1,0 +1,12 @@
+﻿# Python
+.venv/
+__pycache__/
+*.pyc
+
+# Outputs (generated)
+outputs/*
+!outputs/.gitkeep
+
+# OS
+.DS_Store
+Thumbs.db
