@@ -51,17 +51,17 @@ py -3 -m venv .venv
 
 or / 或者：
 ```powershell
-.\.venv\Scripts\python.exe .\scripts\bilibili_jp_study_pipeline.py "https://www.bilibili.com/video/BV1JgwZzUEC2/" --output-dir .\outputs --model base --use-browser-cookies
+.\.venv\Scripts\python.exe .\scripts\bilibili_jp_study_pipeline.py "https://www.bilibili.com/video/BV1JgwZzUEC2/" --output-dir .\\outputs\\BV1JgwZzUEC2 --model base --use-browser-cookies
 ```
 
 ## Output | 输出文件
-- `outputs/bilibili_jp_study.md`  
+- `outputs/<BV号>/bilibili_jp_study.md`  
   Timeline Japanese subtitle + Chinese translation + keywords + focus sentences + vocabulary summary.  
   含时间轴字幕、中文翻译、生词、重点句和词汇汇总。
-- `outputs/raw_segments.json`  
+- `outputs/<BV号>/raw_segments.json`  
   Raw sentence-level subtitle data.  
   原始句级字幕数据。
-- `outputs/source.m4a`  
+- `outputs/<BV号>/source.m4a`  
   Downloaded audio source.  
   下载音频源文件。
 
@@ -83,3 +83,4 @@ git branch -M main
 git remote add origin <your-repo-url>
 git push -u origin main
 ```
+
